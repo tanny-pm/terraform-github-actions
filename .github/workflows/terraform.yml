@@ -13,7 +13,7 @@ jobs:
     permissions:
       id-token: write
       contents: read
-      actions: read
+      pull-requests: write
 
     steps:
       - name: Checkout
