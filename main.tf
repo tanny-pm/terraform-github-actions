@@ -10,18 +10,10 @@ terraform {
     }
   }
   required_version = ">= 1.1.0"
-
-  cloud {
-    organization = "REPLACE_ME"
-
-    workspaces {
-      name = "gh-actions-demo"
-    }
-  }
 }
 
 provider "aws" {
-  region = "us-west-2"
+  region = "ap-northeast-1"
 }
 
 resource "random_pet" "sg" {}
